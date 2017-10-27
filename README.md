@@ -1,2 +1,2 @@
 # learn_IT_girl
-Java scrip 
+A project using javascript 
