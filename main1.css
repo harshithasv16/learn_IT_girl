@@ -1,0 +1,21 @@
+	hr{
+		height: 5px;
+		background-color: #050501;
+	  }
+
+	h1{
+
+		color: blue;
+		text-align: center;
+	  }
+
+	h2{
+		background-color: #E3BD42;
+		color: blue;
+	  }
+
+	body{
+		background-color: #1AD956;
+		margin: 0%  15%  0%  15%;
+	    }
+	
