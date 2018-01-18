@@ -4,9 +4,25 @@ font: normal normal 13px/16px "Open Sans", sans-serif;
 background-image:url("bgimage.jpg");
 }
 
-.container{
+@media only screen and  (max-width=350px){
+body{
+	background-color:lightblue;
+    }
+}
+
+header{
+text-align:right;
+}
+
+.logo{
+	text-indent:  -99999999999px;
+	background-image:url("logo.jpg");
+	width:400px;
+}
+
+.container{	
 padding: 20px;
-width: 300px;
+width: 400px;
 margin: 0 auto;
 margin-top: 40px;
 background: white;
@@ -20,16 +36,6 @@ display: inline-block;
   left: 50%;
   transform: translatex(-50%);
    text-align:center;
-}
-.vpl{
-  position: absolute;
-  left: 50%;
-  top: 90%;
-  transform: translatex(-50%);
-}
-.vol{
-  right: -80%;
-  position: relative;
 }
 input{
 padding: 4px 15px 4px 5px;
