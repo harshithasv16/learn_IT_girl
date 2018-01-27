@@ -1,48 +1,28 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-    <head>
-        <title>To-Do List</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css"> 
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/jquery.validate.js"></script>
-        <script src="js/ui.js"></script>
-        <link rel='stylesheet' href='ui.css'> 
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Todo App">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ajay Kumar Singh and Harshitha">
+    <meta http-equiv="refresh" content="30">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+
 <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container-fluid">
-                  <div class="jumbostron">
-                    <div class="navbar-header">
-                        <a class="nav navbar-brand navbar-center" href="#">HARSHITHA SV - To-Do List</a>
-                         
-                    </div>
-                  </div>  
-                </div>
-            </nav>     
-    <div class="container">
-          <div class="row"></div>
-		<div class="col-sm-12">
-		<header>
-		<img src="logo.jpg">
-		</header>
-		<h3 class="logo"></h3>
-		<h2>To Do List</h2>
-    <p><em>click and drag to reorder, double click to cross an item off.</em></p>
-       
-		<form name="toDoList">
-			<input type="text" name="ListItem"/>
-		</form>
-    
-		<div id="button">Add</div>
-		<br/>
-		<ol>
-            
-        </ol>
-      </div>
-      
-    
+    <div class="row">
+        <div class="col-sm-4" class="logoDiv">
+            <img src="public/todolistlogo.png" class="logo">
+        </div>
+        <div class="col-sm-6">
+            <input type="text" class="search">
+        </div>
+        <div class="col-sm-2">
+        </div>
     </div>
-    </body>
-    </html>
+</body>
+
+</html>

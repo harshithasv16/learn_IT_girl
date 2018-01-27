@@ -1,0 +1,31 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    height: 43px;
+    background-color: #b1a6a5; // #db4c3f
+    border-bottom: solid 1px #ca2100;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+    margin-left: 270px;
+    margin: 5px;
+    padding: 1px;
+    margin-left: 270px;
+}
+
+.toDoListLogo {
+    right: 0;
+}
+
+.logoDiv {}
