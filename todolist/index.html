@@ -26,30 +26,30 @@
 </head>
 
 <body>
-    <div class="logo">
-        <div class="todos">
-            <img src="public/todos3.png" class="logo">
-        </div>
-        <div class="navigation-items" onclick="onTasks()">
-            <div class="task-icon">
-                <i class="fa fa-tasks fa-2x" style="color:rgb(124, 37, 146)" aria-hidden="true"></i>
+    <div class="main-content">
+        <div class="logo">
+            <div class="todos">
+                <img src="public/todos3.png" class="logo">
             </div>
-            <div class="quickadd">
-                <i class="fa fa-plus fa-2x" style="color:green" aria-hidden="true"></i>
+            <div class="navigation-items" onclick="onTasks()">
+                <div class="task-icon">
+                    <i class="fa fa-tasks fa-2x" style="color:rgb(124, 37, 146)" aria-hidden="true"></i>
+                </div>
+                <div class="quickadd">
+                    <i class="fa fa-plus fa-2x" onclick="displayTaskModal()" style="color:green" aria-hidden="true"></i>
+                </div>
+                <div class="notificationbell">
+                    <i class="fa fa-bell fa-2x" style="color:blue" aria-hidden="true"></i>
+                </div>
             </div>
-            <div class="notificationbell">
-                <i class="fa fa-bell fa-2x" style="color:blue" aria-hidden="true"></i>
+            <div class="search-box">
+                <div class="container-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Search Tasks" />
+                </div>
             </div>
-        </div>
-        <div class="search-box">
-            <div class="container-1">
-                <span class="icon"><i class="fa fa-search"></i></span>
-                <input type="search" id="search" placeholder="Search Tasks" />
-            </div>
-        </div>
 
-    </div>
-    <div class="grid">
+        </div>
         <div class="content">
             <div class="menu-items">
                 <div class="menu-list">
@@ -67,98 +67,98 @@
                         <i class="fa fa-tasks fa-2x" style="color:green; cursor:default" aria-hidden="true"></i>
                         <span>Completed Tasks</span>
                     </div>
-                </div>
-                <div class="project-filters" style="cursor:default ">
-                    <ul class="project-filter">
-                        <li class="project">Projects</li>
-                        <li class="filter">Fiters</li>
-                    </ul>
-                    <hr class="horizontal-line">
-                    <div class="projects">
-                        <div class="projects-list" style="cursor:default">
-                            <div "project-1">
-                                <div class="label1">
-                                    <i class="fa fa-circle" style="color:green;" aria-hidden="true"></i>
-                                    <span class="project-labels">Personal</span>
+                    <div class="project-filters" style="cursor:default ">
+                        <ul class="project-filter">
+                            <li class="project">Projects</li>
+                            <li class="filter">Fiters</li>
+                        </ul>
+                        <hr class="horizontal-line">
+                        <div class="projects">
+                            <div class="projects-list" style="cursor:default">
+                                <div "project-1">
+                                    <div class="label1">
+                                        <i class="fa fa-circle" style="color:green;" aria-hidden="true"></i>
+                                        <span class="project-labels">Personal</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div "project-2">
-                                <div class="label1">
-                                    <i class="fa fa-circle" style="color:blue;" aria-hidden="true"></i>
-                                    <span class="project-labels">Shopping</span>
+                                <div "project-2">
+                                    <div class="label1">
+                                        <i class="fa fa-circle" style="color:blue;" aria-hidden="true"></i>
+                                        <span class="project-labels">Shopping</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div "project-3">
-                                <div class="label3">
-                                    <i class="fa fa-circle" style="color:rgb(139, 64, 64);" aria-hidden="true"></i>
-                                    <span class="project-labels">Work</span>
+                                <div "project-3">
+                                    <div class="label3">
+                                        <i class="fa fa-circle" style="color:rgb(139, 64, 64);" aria-hidden="true"></i>
+                                        <span class="project-labels">Work</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div "project-3">
-                                <div class="label3">
-                                    <i class="fa fa-circle" style="color:rgb(65, 8, 8);" aria-hidden="true"></i>
-                                    <span class="project-labels">Work</span>
+                                <div "project-3">
+                                    <div class="label3">
+                                        <i class="fa fa-circle" style="color:rgb(65, 8, 8);" aria-hidden="true"></i>
+                                        <span class="project-labels">Work</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div "project-3">
-                                <div class="label3">
-                                    <i class="fa fa-circle" style="color:rgb(27, 58, 12);" aria-hidden="true"></i>
-                                    <span class="project-labels">Work</span>
+                                <div "project-3">
+                                    <div class="label3">
+                                        <i class="fa fa-circle" style="color:rgb(27, 58, 12);" aria-hidden="true"></i>
+                                        <span class="project-labels">Work</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div "project-3">
-                                <div class="label3">
-                                    <i class="fa fa-plus " style="color:rgb(138, 29, 123);" aria-hidden="true"></i>
-                                    <span class="project-labels">Add Project</span>
+                                <div "project-3">
+                                    <div class="label3">
+                                        <i class="fa fa-plus " style="color:rgb(138, 29, 123);" aria-hidden="true"></i>
+                                        <span class="project-labels">Add Project</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="filters" style="display:none">
-                        <div class="filter-list" style="cursor:default">
-                            <div "filter-1">
-                                <div class="label1">
-                                    <i class="fa fa-filter" style="color:green;" aria-hidden="true"></i>
-                                    <span class="filter-labels">Assigned to me</span>
+                        <div class="filters" style="display:none">
+                            <div class="filter-list" style="cursor:default">
+                                <div "filter-1">
+                                    <div class="label1">
+                                        <i class="fa fa-filter" style="color:green;" aria-hidden="true"></i>
+                                        <span class="filter-labels">Assigned to me</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div "filter-2">
-                                <div class="label1">
-                                    <i class="fa fa-filter" style="color:rgb(184, 142, 28);" aria-hidden="true"></i>
-                                    <span class="filter-labels">Assigned to others</span>
+                                <div "filter-2">
+                                    <div class="label1">
+                                        <i class="fa fa-filter" style="color:rgb(184, 142, 28);" aria-hidden="true"></i>
+                                        <span class="filter-labels">Assigned to others</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div "filter-3">
-                                <div class="label3">
-                                    <i class="fa fa-filter" style="color:rgb(212, 108, 22);" aria-hidden="true"></i>
-                                    <span class="filter-labels">Priority 1</span>
+                                <div "filter-3">
+                                    <div class="label3">
+                                        <i class="fa fa-filter" style="color:rgb(212, 108, 22);" aria-hidden="true"></i>
+                                        <span class="filter-labels">Priority 1</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div "filter-3">
-                                <div class="label3">
-                                    <i class="fa fa-filter" style="color:rgb(158, 13, 13);" aria-hidden="true"></i>
-                                    <span class="filter-labels">Priority 2</span>
+                                <div "filter-3">
+                                    <div class="label3">
+                                        <i class="fa fa-filter" style="color:rgb(158, 13, 13);" aria-hidden="true"></i>
+                                        <span class="filter-labels">Priority 2</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div "filter-3">
-                                <div class="label3">
-                                    <i class="fa fa-filter" style="color:rgb(21, 30, 68);" aria-hidden="true"></i>
-                                    <span class="filter-labels">Work</span>
+                                <div "filter-3">
+                                    <div class="label3">
+                                        <i class="fa fa-filter" style="color:rgb(21, 30, 68);" aria-hidden="true"></i>
+                                        <span class="filter-labels">Work</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div "filter-3">
-                                <div class="label3">
-                                    <i class="fa fa-plus " style="color:rgb(138, 29, 123);" aria-hidden="true"></i>
-                                    <span class="filter-labels">Priority 3</span>
+                                <div "filter-3">
+                                    <div class="label3">
+                                        <i class="fa fa-plus " style="color:rgb(138, 29, 123);" aria-hidden="true"></i>
+                                        <span class="filter-labels">Priority 3</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+
             </div>
-            <div>
-                <hr class="vertical-line" width="1" size="200">
+            <div class="vertical-line">
             </div>
             <div class="navigation-divisions">
                 <div class="todo-main">
@@ -258,21 +258,29 @@
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <p>&copy LearnItGirl</p>
+        </footer>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p class="modal-header">Quick Add Task<span class="close" onclick="onCancelModalTodo()">&times;</span></p>
+                <div class="modal-input">
+                    <div class="input-task">
+                        <div class="container-2">
+                            <span class="icon"><i class="fa fa-calendar fa-2x"  aria-hidden="true"></i></span>
+                            <input type="text" id="modalTaskTodos" placeholder="Add Task" />
+                            <input type="date" id="modal-schedule" />
+                        </div>
+                        <p id="error-msg-modal"></p>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" onclick="onAddModalTodo()" class="btn btn-primary modal-add-task">Add Task</button>
+                        <button type="button" onclick="onCancelModalTodo()" class="btn btn-danger cancel-adding-button">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-   /* <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyA68tgFbKLQ7IjxAF7eJwObk0E_4jNgZNQ",
-        authDomain: "learnitgirl-todoapp.firebaseapp.com",
-        databaseURL: "https://learnitgirl-todoapp.firebaseio.com",
-        projectId: "learnitgirl-todoapp",
-        storageBucket: "learnitgirl-todoapp.appspot.com",
-        messagingSenderId: "970590889506"
-      };
-      firebase.initializeApp(config);
-    </script>*/
-
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 
     <script src="app.js"></script>
